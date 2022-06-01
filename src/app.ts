@@ -5,4 +5,6 @@ const app = createExpressServer({
     controllers: [UserController]
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('Server Running')
+});
