@@ -5,6 +5,6 @@ const app = createExpressServer({
     controllers: [UserController]
 });
 
-app.listen(3000, () => {
+app.listen(process.env.port || 8080, () => {
     console.log('Server Running')
 });

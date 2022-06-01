@@ -7,4 +7,9 @@ export class UserController {
     getAll() {
         return 'Hello You! Welcome';
     }
+    
+    @Get('/config')
+    getConfig() {
+        return process.env;
+    }
 }
